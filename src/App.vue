@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <img :src="imageUrl" class="logo vue" alt="Vue logo" @click="changeImage" />
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view />
 </template>
 
 <script>
 import { computed } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue';
 import { ref } from 'vue';
 export default {
-  components: {
-    HelloWorld,
-  },
   setup() {
     const imageName = ref('vue');
     const imageUrl = computed(() => {
@@ -38,17 +35,19 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.logo {
+  &::hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  &.vue:hover {
+    filter: drop-shadow(0 0 2em #42b883aa);
+  }
 }
 </style>
