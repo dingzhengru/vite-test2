@@ -1,6 +1,6 @@
 <template>
   <h1>About</h1>
-  <HelloWorld msg="HelloWorld"></HelloWorld>
+  <HelloWorld msg="HelloWorld" />
 </template>
 
 <script>
