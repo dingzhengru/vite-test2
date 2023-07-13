@@ -1,0 +1,269 @@
+//File
+$file-path:      '../#{$theme}/img'          !default;  
+$lang : 'zh-tw'  !default;  
+
+$primary : #583c33 !default; 
+$second : #e1b54a !default; 
+$third:#89929c;
+$link: #1890ff !default; 
+$body-bg :#f0f2f5;
+
+//header-------------------------------------------
+$topbarHeader-bg :none;
+$username-color:#ffffda;
+$userpic-bordercolor:#f29032;
+$userpic-bg:#fff;
+$userurl-color:$primary;
+$money-color:#fff;
+$money-bg :url("#{$file-path}/bg/moneyBg.png") no-repeat center;
+$noticeBar-bg :#00000078;
+$noticeBar-color:#fff;
+
+//footer-------------------------------------------
+$footer-bg:url("#{$file-path}/bg/footerBg.png") no-repeat #fdfef0  center  / 100% 100%;
+$footeritem-color:#fff;
+$footeritem-color-active:#fff;
+$footeritem-bg-active:transparent;
+$footeritem-shadow:none;
+
+//sidebar-------------------------------------------
+$sidebar-bg : none;
+$sidebar_line-bg:none;
+$sidebar_title-color:#fff;
+$sidebar_value-color:#fff;
+
+//tab-------------------------------------------
+$tab-wrap-bg :#fff;
+$tab-wrap-shadow :inset 2px -2px 5px 2px #d2d2d2;
+$tab-bg:none;
+$tab-color : $primary;
+$tab-active-color : #fff;
+$tab-active-bg:linear-gradient(to left, #2448f6 0%, #6c94f5 100%);
+$tab-active-shadow:none;
+$tabsStyle2-bg :rgba(0,0,0,.2);
+$tabsStyle2-color : #fff;
+$tabsStyle2-active-color : #009cff;
+$tabsStyle2-tab-bg:transparent;
+$tabsStyle2-tab-active-bg:none;
+
+$tabVertical-wrap-color:#795c4b;
+$tabVertical-color:$primary;
+$tabVertical-active-bg:#cbc2b0;
+
+//tab modal-------------------------------------------
+$tabModal-wrap-bg:url("#{$file-path}/bg/modalTabbar.png") no-repeat center ; 
+$tabModal-color : #fff; 
+$tabModal-bg:transparent;
+$tabModal-active-bg:linear-gradient(to bottom, #485c99 0%, #5269ad 100%);
+$tabModal-active-color :#fff;
+$tabModal-shadow :inset 2px 2px 1px 2px #3c518e, inset 0px 0px 1px 2px #84a0df;
+$tabModalcont-bg :#fdfef0;
+$tabModalcont-bordercolor :8px solid #f8dc8c;
+
+//modal
+$modal-bg:none;
+$modal_tabbar-bg:url("#{$file-path}/bg/modalTabbar.png") no-repeat center / contain;
+$modal_tabbar_header-color:#fff;
+$modalSm_tabbar-bg:url("#{$file-path}/bg/modalTabbar.png") no-repeat center / contain;
+$modalLogin_tabbar-bg:url("#{$file-path}/bg/modalTabbar2.png") no-repeat center / contain; 
+$modalSm_tabbar_header-color:#fff;
+$modal_header-color:$primary;
+$modal_header-span-color:#e6bd65;
+$modal_msg-color:$primary;
+$modal_msg-color2:#fff;
+$modal_msg-ol-color : #fff;
+$modalSm_msg-color:$primary;
+$modal_result-bg:#ffffff;
+$modal_result-shadow:inset 1px 1px 5px 1px #ddd;
+$modal_bottom-bg:url("#{$file-path}/bg/modalBg.png") no-repeat center ;  
+$modalSm-bg :none;
+$modalSm-shadow:none;
+$modalSm-borderColor:none;
+$modalSm-cont-bg :#fdfef0 ;
+
+//btn
+$btn_default-bg : #f1f2f4 ;
+$btn_default-color:$primary; 
+$btn_default-shadow: inset -1px -1px 3px 1px #d7d0c8 , inset 2px 2px 3px 1px #fff;
+
+$btn_primary-bg:linear-gradient(to right,#ee8631 0% , #ea552d 100%);
+$btn_primary-color:#fff;
+$btn_primary-shadow: inset 2px 2px 3px 1px #f3ad71 , inset -1px -1px 3px 1px #ec7c34;
+
+$btn_second-bg:linear-gradient(to right,#fbb628 0% , #fc8b22 100%);
+$btn_second-color:$primary;
+$btn_second-shadow:inset 2px 2px 3px 1px #ffc336 , inset -1px -1px 3px 1px #fba915;
+$btn_second-borderColor: none;
+
+$btn_second-active-bg:linear-gradient(to right,#fbb628 0% , #fc8b22 100%);
+$btn_second-active-color:#fff; 
+$btn_second-active-shadow : none;
+$btn_second-active-borderColor: none;
+
+$btn_third-bg:url("#{$file-path}/bg/btn_third-bg.jpg") 0 0 no-repeat;
+$btn_third-color:#fff;
+$btn_third-borderColor:1px solid rgba(73,141,204,.541)  ;
+$btn_third-shadow: 0 0 7px 0 rgba(0,156,255,.561);
+
+$btn_success-bg:linear-gradient(to right,#01d297 0% , #00a175 100%);
+$btn_success-color:#fff;
+$btn_success-shadow:inset 2px 2px 3px 1px #56e2bc , inset -1px -1px 3px 1px #01c38f;
+$btn_success-borderColor:none;
+
+$btn-chat-bg :url("#{$file-path}/btn/btn_chat.png") no-repeat center;
+$btn-chat-color:#222222;
+
+$btn_contact-bg: none;
+$btn_contact-color:#fff;
+$btn_contact-shadow: 0 0 15px rgba(0,0,0,.25);
+
+$btn_money-bg :linear-gradient(to right,#01d297 0% , #00a175 100%);
+$btn_money-color :#fff;
+$btn_money-shadow :inset 2px 2px 3px 1px #56e2bc , inset -1px -1px 3px 1px #01c38f; 
+
+$btn_login-bg: linear-gradient(to left, #2448f6 0%, #6c94f5 100%);
+$btn_login-color: $btn_primary-color;
+$btn_login-shadow: inset 2px 2px 2px 1px #6c94f5 , inset -1px -1px 2px 1px #2448f6; 
+
+$btn_logout-bg :#000;
+$btn_logout-color:#fff;
+
+//form
+$form-bg:none;
+$form-shadow: none;
+$inputText-Bg :#fdf8e5;
+$inputText-borderColor : 2px solid #c6c3b2;
+$inputText-color:#000;
+$inputLabel-color:#fff;
+$inputTextfield-Bg :rgba(0,0,0,.4);
+$inputTextarea-bg : #fdf8e5;
+$inputTextarea-border : 2px solid #c6c3b2;
+$inputTextarea2-bg : #dbdad8;
+$inputTextarea2-color:#fff;
+$inputTextarea2-shadow:inset 1px 3px 5px #acacac;
+$sel-bg:#fdf8e5; 
+$sel-borderColor:2px solid #c6c3b2;
+$sel-color:#000;
+$sel-option-bg:transparent;
+$sellang-bg:#e9e9eb;
+$sellang-color:#3880e7;
+$input-date-color:#fff;
+$input-date-bg : url('#{$file-path}/icon/i-date.png') calc(100% - 5px) no-repeat rgba(0, 0, 0, .4);
+
+$formVer-inputText-Bg :transparent;
+$formVer-inputLabel-color:$primary;
+$formVer-inputTextfield-Bg :$inputText-Bg ;
+$formVer-inputText-borderColor: none ;
+$formVer-inputText-value-borderColor: $inputText-borderColor ;
+
+$field_ricon-color :$primary;
+
+//page-------------------------------------------
+//game
+$lobby-bg:#fdfef0;
+$game_topbar_headerb-bg :url("#{$file-path}/bg/gameBg.png")  #e74b4b no-repeat center   / contain;
+$game_list-bg:transparent;
+$game_list_title-color:#fff;
+$user_top_title-color:$second;
+$user_top_name-color :$primary;
+$banner1-bg :url("#{$file-path}/#{$lang}/banner/banner01.jpg")  no-repeat center / cover;
+$banner2-bg :url("#{$file-path}/#{$lang}/banner/banner02.jpg")  no-repeat center / cover;
+
+//set
+$set_list-bg:#fdfef0;
+$set_list_title-color:$primary;
+$set_list_arrow-color:#dfb04d;
+
+//card
+$mailSwitch-bg:#fff;
+$mailSwitch-bordercolor:#d2d2d2; 
+$mailSwitch-li-active-bg:linear-gradient(to left, #2448f6 0%, #6c94f5 100%);
+$mailSwitch-li-active-color:#fff;
+$achieve_bg :#ecebfb;
+$achieve_title-color :$primary;
+$achieve_cont_title-color :$primary;
+$achieve_cont_txt-color :$second;
+$card_level-bg:linear-gradient(to bottom, #febb23 0% , #fbde8e 100%);
+$card_level-bordercolor:#f5faff;
+$cardBank-bg :none;
+$cardBank-color:#fff;
+
+//task
+$task_list-bg:#f5f7f9;
+$task_list_txt-color:$primary;
+$task_list_txt-span-color:#e7bc56;
+$task_money-color:#fff;
+
+//announcement
+$announcement-bg:transparent;
+$announcement-list-bg:rgba(0,0,0,.3);
+$announcement-list-borderColor:1px solid hsla(0,0%,100%,.1);
+$announcement-title-bg: #000;
+$announcement-title-color: #fff;
+$announcement-value-color: #fff;
+$announcement_des-color:#969799; 
+
+//activity
+$activity_pic-bg :none;
+$activity_title-color:#000;
+$activity_txt-color:#000;
+$activity_title-color: $second;
+
+$urlLoad-bg :none;
+$urlLoadFinish-bg :none;
+
+//casino
+$casino_bg:none;
+$mclub_bg:none;
+
+//chat
+$chat-bg : linear-gradient(to bottom,#dbc282 0%, #f7df97 15%,#f7df97 85%, #dbc282 100%);
+$chat_topbar_header-bg :$topbarHeader-bg;
+
+//androidapk
+$androidapk-logo-color:$third;
+$androidapk-p-color:$third;
+
+//member
+$top_back : $modal_tabbar_header-color;
+$betTotal_line : linear-gradient(to top, transparent 0%, #5c9bc9 50% ,transparent 100% );
+$betTotal_title-color:#fff;
+$betTotal_num-color:$second;
+
+//login
+$login-bg:none;
+$login-line : none;
+$login_inputText-Bg :none;
+
+//tag-------------------------------------------
+$tag_game-color:#fff;
+$tag_game1-bg:linear-gradient(to bottom, #5ab88a 0% , #62c796 100%);
+$tag_game2-bg:linear-gradient(to bottom, #5ab88a 0% , #62c796 100%);
+$tag_game3-bg:linear-gradient(to bottom, #5ab88a 0% , #62c796 100%);
+$tag_game4-bg:linear-gradient(to bottom, #5ab88a 0% , #62c796 100%);
+$tag_game5-bg:linear-gradient(to bottom, #5ab88a 0% , #62c796 100%);
+$tag_game6-bg:linear-gradient(to bottom, #5ab88a 0% , #62c796 100%);
+$tag_gamelabel-bg:#f7cc49;
+$tag_gamelabel-color:#583c33;
+$tag_money-bg :#2e52f1;
+
+//switch-------------------------------------------
+$switch-bg :#dcdee0;
+$switch-active-bg :#f6c55a;
+
+//popup-------------------------------------------
+$popup-colse-color :#5ec1ff;
+$popup-colse-borderColor :1px solid #5ec1ff;
+
+//td-------------------------------------------
+$tb-border:1px solid #ddd;
+$thead-th-bg :#3b200b;
+$thead-th-color:#fff;
+$tbody-th-bg:#3b200b;
+$tbody-th-color :#fff;
+$tbody-td-color :#000;
+$td-even-bg:#e0e0e0;
+$td-bg:transparent;
+
+//pagination-------------------------------------------
+$pageNum-color:#fff;

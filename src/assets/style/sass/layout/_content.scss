@@ -1,0 +1,158 @@
+.content { 
+     padding: 0 8px; 
+}
+
+// lobby
+.lobby {
+    background: $lobby-bg;
+    margin-top: 180px;
+    height: calc(100vh - 250px); 
+    overflow: auto;
+    .btn_task {
+        position: fixed;
+        left: 10px;
+        top: 40%;
+        z-index: 9;
+    }
+    .btn_chat {
+        position: fixed;
+        right: 10px;
+        top: 40%;
+        z-index: 9;
+    }
+    .btn_line {
+        position: fixed;
+        left: 10px;
+        top: 60%;
+        z-index: 9;
+    }
+}
+.game_list {
+    background: $game_list-bg;
+    position: relative;
+    margin: 4px 0;
+    border-radius: 16px;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;right: 0;left: 0;
+        z-index:-1;
+        bottom: 0;                
+        border-radius: 20px ; 
+    }
+    .i-fav {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+    }
+    &_title { 
+        color: $game_list_title-color;
+        text-align: center;
+        padding: 6px 0; 
+        font-size: 14px;
+        display: none;
+    }
+    &.coming {
+        &::before{
+            content: 'Coming Soon';
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,.6);
+            color: #fff;
+            font-size: 24px;            
+            border-radius:12px;
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 20px; 
+    }
+} 
+ 
+.list {
+    padding-left: 30px;
+    line-height: 1.5rem;
+}
+
+
+.mailSwitch {
+    background: $mailSwitch-bg;
+    border: 1px solid $mailSwitch-bordercolor;
+    display: inline-block;
+    font-size: 14px; 
+    box-shadow: inset 3px 3px 3px 0px #c6c6c6;
+    border-radius: 24px;
+    padding: 4px 4px;
+    >li {
+        @include display-align;
+        padding: 8px 12px;
+        border-radius: 24px;
+        &.active {
+            background: $mailSwitch-li-active-bg;
+            color: $mailSwitch-li-active-color;
+        }
+    }
+}
+
+.video { 
+    .cpn_video {
+        width: 100%;
+    }
+    &_btn {
+        margin: 8px 0;
+        .i {
+            opacity: .5;
+            margin-right: 4px;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.pagination {
+    margin: 8px 0;
+    .pageNum {
+        color: $pageNum-color;
+        font-size: 14px;
+        margin: 0 8px;
+    }
+    .i {
+        margin: 0 2px;
+    }
+}
+.login {
+    background: $login-bg;
+    &.modal-sm { 
+        .modal_tabbar {
+            background: $modalLogin_tabbar-bg;
+            &:after {
+                background: $login-line ;
+            }
+        }
+        
+    } 
+    .form .van-field {
+        background: $login_inputText-Bg;
+    }
+    .form_btn {
+        position: relative;
+        margin-top: 12px;
+        padding: 0;
+        &::before {
+            @include size(94%, 3px);
+            background: $login-line ;
+            content: '';
+            display: block;
+            margin: 16px auto;
+        }
+    }
+}
+.reflash {
+    &.modal-sm .modal_content {
+        padding-top: 0;
+    }
+}

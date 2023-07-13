@@ -1,0 +1,17 @@
+.set {
+    .van-cell__title {
+        color: $set_list_title-color;
+    }
+    &_list {
+        .van-cell-group {
+            background: transparent;
+        }
+        .van-cell {
+            background: $set_list-bg;
+            line-height: 1rem;
+        }
+        .van-icon {
+            color: $set_list_arrow-color;
+        }
+    }
+}

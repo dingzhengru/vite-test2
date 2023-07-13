@@ -1,0 +1,147 @@
+.topbar {
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;
+    z-index: 99;    
+    height: 200px;
+    &_header { 
+        background: $topbarHeader-bg;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        position: relative;
+        padding:4px ;
+        height: 90px; 
+        z-index: 99;
+        .btn_back {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -22px;
+        }
+        .btn_chat {
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            margin-top: -25px;
+        }
+        .i-write {
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            margin-top: -15px;
+        }
+    }
+    &_l { 
+        
+    }
+    &_r { 
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        .name {
+            color: #9fbcd7;
+            font-size: 13px;
+            display: none;
+        }
+    }
+}
+
+.van-nav-bar {
+    background: transparent;
+    bottom: 0;
+    &__content {
+        height: auto;
+    }
+    &::after{
+        content: none;
+    }
+}
+
+.banner { 
+    height: 200px;   
+    position: absolute;
+    top: 0;left: 0;right: 0;
+    &1 {
+        background: $banner1-bg; 
+    }
+    &2 {
+        background: $banner2-bg; 
+    }
+}
+.user { 
+    @include flex-align;
+    &_pic { 
+        border: 3px solid $userpic-bordercolor;
+        background: $userpic-bg;
+        display: inline-flex;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 40px;
+        }
+        &-md {
+            img {
+                width: 60px;
+            }
+        }
+    }
+    
+    &_txt {
+        @include display-align;
+    }
+    .name {
+        color:$username-color;
+        font-weight: 600;
+        text-shadow: 1px 1px 4px #000;
+    }
+    &_url { 
+        @include bg('user/member.png');
+        color: $userurl-color;
+        @include inlineflex;
+        @include size(50px,22px);
+        background-size: contain;
+        font-size: 12px;
+        padding-left: 16px;
+        font-weight: 600;
+        margin-right: 2px;
+    }
+    &_tag { 
+        @include bg('user/userTag.png');
+        @include size(54px,22px);
+        @include inlineflex;
+        background-size: contain;
+        font-size: 12px;        
+        padding-left: 8px;
+        font-weight: 600; 
+    }
+}
+.money { 
+    background: $money-bg;    
+    @include size(110px,30px);
+    background-size: contain;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px; 
+    span {
+        color: $money-color; 
+        margin: 0 4px;        
+    }
+    & + .i-set  {
+        filter: drop-shadow(2px 4px 6px black);
+    }
+}
+
+.noticeBar  {
+    background: $noticeBar-bg;
+    color: $noticeBar-color;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    height: 24px;
+    z-index: 99;
+} 
+.logo {
+    display: none;
+}

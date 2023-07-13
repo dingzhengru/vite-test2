@@ -1,0 +1,110 @@
+$rank-icon : (
+    0:  number-0 ,  
+    1:  number-1 ,  
+    2:  number-2 ,  
+    3:  number-3 ,  
+    4:  number-4 ,  
+    5:  number-5 ,  
+    6:  number-6 ,  
+    7:  number-7 ,  
+    8:  number-8 ,  
+    9:  number-9 ,  
+    more:  number-more ,  
+);
+@each $name , $bg in $rank-icon {
+    .rank_num[data-num="#{$name}"] {
+            @include bg('icon/num/#{$bg}.png');
+            @include size(20px,23px);
+            background-size: contain;
+            display: inline-block;
+        }
+} 
+.rank {
+    .modal_content {
+        padding-bottom: 125px;
+    }
+    &_num {
+        color:#dc863b ;
+        font-weight: 600;
+        font-size: 18px; 
+        &-wrap {
+            @include flex-align(center);
+            margin: 0 5px;
+            min-width: 40px;
+            text-align: center;
+        }
+    }
+    &_top {}
+    &_pic { 
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            @include size(36px);
+            vertical-align: middle;
+        }
+    }
+    &_name {
+        
+    }
+    &_money {
+        font-weight: 600;
+        color: #000;
+        font-size:18px; 
+    }
+    &_list {
+        justify-content: space-between;
+        overflow: visible;
+        height: 50px;
+        &_title {
+            @include flex-align(start);
+            gap: 8px;
+            flex: none;
+            .rank_num  {
+               
+                &[data-num="top1"] {
+                    @include bg('icon/i-top1.png');
+                    @include size(50px);
+                    background-size: contain;
+                    display: inline-block;  
+                    margin: 0;
+                }
+                &[data-num="top2"] {
+                    @include bg('icon/i-top2.png');
+                    @include size(50px);
+                    background-size: contain;
+                    display: inline-block; 
+                    margin: 0;
+                }
+                &[data-num="top3"] {
+                    @include bg('icon/i-top3.png');
+                    @include size(50px);
+                    background-size: contain;
+                    display: inline-block; 
+                    margin: 0;
+                } 
+            }
+        }
+        &_value {
+            @include flex-align(start);
+            gap: 8px;
+            flex: none; 
+        }
+        &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+            background-image: linear-gradient(to bottom, #f1bf4e 0% , #f4dc9c 100%);
+            .rank_num {
+               position: relative;
+               top: -10px;
+               z-index: 99;
+            }
+        }
+        background: #fdf8e5;
+        border-radius: 12px;
+        margin: 16px 0;
+        padding: 4px 12px;
+        border: 4px solid #e2af5c;
+    }
+
+    .modal_result {
+        justify-content: space-between;
+    }
+}

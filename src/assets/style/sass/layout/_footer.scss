@@ -1,0 +1,23 @@
+ .footerBar {
+   background:$footer-bg; 
+   @include size(100%,70px); 
+   box-sizing: border-box;
+   padding-top: 10px;
+    &:after {
+      content: none;
+    }
+    .van-tabbar-item {
+      color: $footeritem-color; 
+      &--active {
+         background: $footeritem-bg-active;
+         color: $footeritem-color-active;
+         box-shadow: $footeritem-shadow;
+       }
+    } 
+    .van-tabbar-item__icon {
+      margin-bottom: 8px;
+    }
+    .van-tabbar-item__text {
+      font-size: 14px;
+    } 
+ } 

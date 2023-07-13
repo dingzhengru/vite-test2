@@ -1,0 +1,35 @@
+.market{
+    .modal_content { 
+        padding-bottom: 125px;
+    }
+    &_list { 
+        font-weight: 600;    
+            background: linear-gradient(to right, #f8f8fa 50%, #e8ebf0 100%);
+            box-shadow: inset -1px -1px 1px 1px #dbd7d6 ,  inset 1px 1px 1px 1px #fff;
+            border-radius: 16px;
+            padding: 8px;
+            text-align: center;
+            position: relative;
+            border: 1px solid #eeeeee;
+    }
+    &_title {
+        color: $primary;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #eae6dd; 
+    }
+    &_money {
+        @include flex-align(center);
+        margin: 4px 0;
+        span {
+            margin-left: 2px;
+        }
+    }
+    &_mark {
+        @include flex-align(center); 
+        position: absolute;
+        right: -8px; top: -16px;
+        background: #2e52f1;      
+        border-bottom-left-radius: 0; 
+        box-shadow: inset -1px 1px 5px  rgba(#fff,.6);
+    }
+}

@@ -1,0 +1,54 @@
+body {
+    background: $body-bg;
+    font-family: $font-family;
+}
+.left {
+    text-align: left !important;
+}
+.right {
+    text-align: right !important;
+}
+.center {
+    text-align: center !important;
+}
+.pointer {
+    cursor: pointer;
+}
+.w-full {
+    width: 100%;
+}
+.wrapper {
+    min-height:100vh
+}
+
+ol {
+    list-style:decimal; 
+}
+ul {
+    list-style: disc;
+}
+.line {
+    background: linear-gradient(to right, transparent 0% , #fbde8e 50% , transparent 100%);
+    @include size(100%,1px);
+    margin: 16px 0;
+}
+.van-switch {
+    background: #dcdee0;
+    &--on {
+        background: $switch-active-bg;
+    }
+}
+
+.slide-fade-enter-active {
+    transition: all 0.2s ease-out;
+  }
+  
+  .slide-fade-leave-active {
+    transition: all 0.2s ease-out;
+  }
+  
+  .slide-fade-enter-from,
+  .slide-fade-leave-to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }

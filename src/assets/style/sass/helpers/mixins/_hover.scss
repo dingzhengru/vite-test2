@@ -1,0 +1,15 @@
+//--------------------------------position-center--------------------------------//
+@mixin hover($status: "both") {
+    @if $status == "both" {
+        &:hover,
+        &.active,
+        &.selected {
+            @content;
+        }
+    }
+    @if $status == "acitve" {
+        &.active {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.announcement {
+    background:$announcement-bg;
+    margin-top: 10px;
+    &_list {
+        background: $announcement-list-bg;
+        border: $announcement-list-borderColor;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 10px;
+        margin: 10px 0;
+        &::after {
+            content: none
+        }
+    }
+    &_title {
+        background:$announcement-title-bg;
+        color: $announcement-title-color;
+        @include flex-align;
+       
+        i {
+            @include display-align;
+            margin-right: 4px;
+        }
+        span {
+            @include display-align;
+            margin-left: 0;
+           
+        }
+    }    
+    &_value {
+        color: $announcement-value-color;
+        padding: 10px 16px;
+        text-align: left;
+    }
+    &_label {
+        padding: 5px 10px;  
+    }
+    &_des {
+        color: $announcement_des-color;
+        padding: 5px 16px;
+        margin-top: 0;
+    }
+}

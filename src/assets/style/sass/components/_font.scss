@@ -1,0 +1,64 @@
+.t { 
+    &-link {
+        text-decoration: underline;
+        color: $link !important;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline; 
+        }
+    }
+    &-primary {}
+    &-second {
+        color: $second;
+    }
+    &-third {
+        color: $third;
+    }
+    &-remark {
+        color: $link;
+    }
+    &-success {
+        color: $second;
+    }
+    &-danger {
+        color: #f06548;
+    }
+    &-org {
+        color: #ff6600;
+    }
+    &-brown {
+        color: $primary;
+    }
+    &-yellow {
+        color: #edd843;
+    }
+    &-wrap {
+        white-space: normal;
+    }
+    &-ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+    &-remark { 
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.2rem;
+    } 
+    &-kind {
+        color:#fff;
+        text-decoration: underline;
+    } 
+    &-minus {
+        color: #fc5b5b;
+    }
+    &-date {
+        white-space: nowrap;
+    }
+    &-time {
+        white-space: nowrap;
+    }
+}

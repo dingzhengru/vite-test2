@@ -1,0 +1,42 @@
+//--------------------------------position-center--------------------------------//
+@mixin VerCen($hor:false){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @if $hor == true{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+@mixin VerCenBef($type:false) { 
+  @if $type == true {
+      display: inline-block;
+      vertical-align: middle;
+  }  
+  &::before{
+      @include display-align(middle);
+      @include size(0,100%);
+      content:'';
+  }
+}
+
+@mixin display-align($align:middle) {
+  display: inline-block;
+  vertical-align: $align;
+}
+
+@mixin flex-align($justify:space-between) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin inlineflex($justify:center) {
+  display: inline-flex;
+  justify-content: $justify;
+  align-items: center;
+}

@@ -1,0 +1,144 @@
+.card {
+    .achieve {
+        background: $achieve_bg;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 12px;
+        margin: 8px 0;
+        &_title {
+            color: $achieve_title-color;
+            font-weight: 600;
+            font-size: 16px;
+           
+        }
+        &_cont {
+            @include flex-align(start);
+            font-size: 16px;
+            padding: 8px 0;
+            .title {
+                color: $achieve_cont_title-color;
+            }
+            .txt {
+                color: $achieve_cont_txt-color;
+            }
+        }
+    } 
+
+    &_level {
+        background-image: $card_level-bg;
+        border: 2px solid $card_level-bordercolor;
+        border-radius: 24px;
+        @include size(100% ,150px);
+        box-shadow: 2px 2px 2px 2px #ddd;
+        margin: 20px 0 10px;
+        .i-level {
+            margin-top: -20px;
+        }
+        &_l {
+            font-weight: 600;
+            text-align: center;
+            .btn {
+                height: 36px;
+                
+            }
+        }
+        &_title { 
+            margin-bottom: 20px;
+            margin-top: 10px;
+            span {
+                color: #fff;                
+                font-size: 20px;
+            }
+        }
+        &_r {}
+    }
+    .level {
+        &_list {
+            background: transparent;
+            &:after {
+                border-color: #fff;
+            }
+        }
+        &_title {}
+        &_value {
+            color: $primary
+        }
+    } 
+    .vip_ad {
+        @include bg('bg/vipBg.png');
+        @include size(100%,100px);
+        background-size: contain;
+        margin: 10px 0;
+        &_txt {
+            text-align: center;
+            p{
+                margin-bottom: 8px;
+                font-weight: 600; 
+            }
+            .btn {
+                @include size(100% ,36px)
+            }
+        }
+        .i-level{
+            @include size(60px)
+        }
+    }
+ }
+
+ .user_top {
+    &_txt {
+        line-height: 1.2rem;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    &_title {
+        color: $user_top_title-color;
+        font-size: 14px;
+    }
+    &_name {
+        color: $user_top_name-color;
+    }
+ }
+ .van-popover--light .van-popover__content { 
+    box-shadow: inset -2px -2px 3px rgba(#ca2103,.6);
+    background-image: linear-gradient(to right,#ff7100 0%, #fe3a05 100%)
+ }
+ .van-popover__arrow {
+    color: #fe5602;
+ }
+ .popover_cont { 
+    @include size(120px,30px);
+    background-size: contain; 
+    @include flex-align(center);
+    color: #fff; 
+    font-size: 14px;
+}
+
+.bank_card {
+    background: $cardBank-bg ;
+    color: $cardBank-color;
+    @include size(300px,171px);
+    position: relative;
+    margin:20px auto;
+    &_head {
+        text-shadow: 1px 1px 3px #000;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-weight: 700;
+        font-size: 18px;  
+    }
+    &_cont {
+        text-shadow: 1px 1px 3px #000;
+        position: absolute;
+        left: 15px;
+        top: 54%;
+        font-size: 22px;
+    }
+    &_foot {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,5 @@
+//background
+@mixin bg($bg-file , $bg-position:center , $bg-repeat:no-repeat) {
+  background: url("#{$file-path}/#{$bg-file}") $bg-repeat $bg-position;
+}
+ 

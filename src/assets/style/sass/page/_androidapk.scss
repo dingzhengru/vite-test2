@@ -1,0 +1,20 @@
+.androidapk {
+    .logo {
+        text-align: center; 
+        margin: 40px 0 30px; 
+        p {
+            color: $androidapk-logo-color;
+            font-size: 14px;   
+        }
+    }
+    &_list {
+        margin-bottom: 30px;
+        p {
+            color: $androidapk-p-color;
+            text-align: center;
+            font-size: 14px;
+            margin: 4px 0;
+            line-height: 1.2rem;
+        }
+    }
+}

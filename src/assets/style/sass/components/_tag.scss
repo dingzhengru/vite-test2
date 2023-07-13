@@ -1,0 +1,44 @@
+.van-tag {
+    padding: 0 6px;
+}
+.tag {
+    &_game {
+        position: absolute;
+        bottom: -2px; left: -3px;
+        border-radius: 4px;
+        color: $tag_game-color;
+        &-1 {
+            background: $tag_game1-bg; 
+        }
+        &-2 {
+            background: $tag_game2-bg;            
+        }
+        &-3 {
+            background: $tag_game3-bg;            
+        }
+        &-4 {
+            background: $tag_game4-bg;            
+        }
+        &-5 {
+            background: $tag_game5-bg;            
+        }
+        &-6 {
+            background: $tag_game6-bg;            
+        } 
+    } 
+    &_gamelabel {
+        background: $tag_gamelabel-bg;
+        color: $tag_gamelabel-color;
+        position: absolute;
+        bottom: -2px; right: -3px;
+        font-weight: 600;
+    }
+    &_money {
+        @include flex-align(center); 
+        background: $tag_money-bg;      
+        position: absolute;
+        right: -3px; top: -10px;
+        border-bottom-left-radius: 0; 
+        box-shadow: inset -1px 1px 5px  rgba(#fff,.6);
+    }
+}

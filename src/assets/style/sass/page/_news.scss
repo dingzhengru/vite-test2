@@ -1,0 +1,19 @@
+.news {
+    .modal_content {
+        @include flex-align(center);
+        height:100vh; 
+        overflow-y: hidden;  
+        flex-direction: column;
+        gap:12px;
+        padding: 0 20px;
+        &::before{
+            content: none;
+        }
+        .van-checkbox__icon {
+            background: #fff;
+        }
+        .van-checkbox__label{
+            color: #fff;
+        }
+    }
+}

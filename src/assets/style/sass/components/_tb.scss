@@ -1,0 +1,65 @@
+.tb {
+    border: $tb-border ;
+    font-size: 14px;
+    td , th {
+        padding: 8px;
+    }
+
+    text-align: center;
+        margin: 10px 0;
+        thead {
+            th {
+                background: $thead-th-bg ;
+                color: $thead-th-color ; 
+            }
+        }
+        tbody {
+            th {
+                background:$tbody-th-bg ;
+                color: $tbody-th-color ;
+            }
+            td {
+                background: $td-bg;  
+                color: $tbody-td-color ;
+            }
+            tr:nth-child(even) {
+                td {
+                    background: $td-even-bg; 
+                }
+            }
+        }
+
+    &-border {    
+        th , td{ 
+            border: 2px solid  #082340;
+        }            
+    }    
+    &-vip {
+        .i-level {
+            @include size(30px)
+        }
+        tbody{
+            tr {
+                border: 1px solid #ddd;
+            }
+            td , th {
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+            tr:nth-child(even) {
+                td {
+                    background: none;
+                }
+                td.active {
+                    background: #fff9c8;
+                }
+            } 
+            td.active {
+                background: #fff9c8;
+            } 
+        }
+    }     
+    &-wrap {
+        overflow-x: auto;
+    }
+}

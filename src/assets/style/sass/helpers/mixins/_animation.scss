@@ -1,0 +1,4 @@
+@mixin animation($delay:1s,$count:1) {    
+  animation-delay: $delay;
+  animation-iteration-count: $count;
+}

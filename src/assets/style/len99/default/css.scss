@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+//theme 
+$theme : 'default'            !default; 
+//載入色板
+@import "../theme/default";  
+
+//base
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/mixins";
+
+//base
+@import "../../sass/layout/reset";
+ 
+//components 
+@import "../../sass/components/btn";
+@import "../../sass/components/ball";
+@import "../../sass/components/form";
+@import "../../sass/components/icon"; 
+@import "../../sass/components/font"; 
+@import "../../sass/components/space"; 
+@import "../../sass/components/tabs"; 
+@import "../../sass/components/tb";
+@import "../../sass/components/tag";
+
+//module
+@import "../../sass/module/modal";  
+
+//layout
+@import "../../sass/layout/base";  
+@import "../../sass/layout/header";  
+@import "../../sass/layout/footer";  
+@import "../../sass/layout/content";  
+@import "../../sass/layout/sidebar";  
+
+//page
+@import "../../sass/page/activity";  
+@import "../../sass/page/rank";  
+@import "../../sass/page/game";  
+@import "../../sass/page/card";  
+@import "../../sass/page/market";  
+@import "../../sass/page/task";  
+@import "../../sass/page/set";  
+@import "../../sass/page/news";  
+@import "../../sass/page/chat";  
+@import "../../sass/page/announcement";  
+@import "../../sass/page/backup";  
+@import "../../sass/page/androidapk";  
+@import "../../sass/page/casino";   
+@import "../../sass/page/member";  
+
+@import "../../sass/layout/media";  

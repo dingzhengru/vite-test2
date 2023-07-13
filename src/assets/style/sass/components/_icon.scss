@@ -1,0 +1,297 @@
+.i {
+    &-fav {
+        @include size(30px);
+        @include bg('icon/i-fav.png');
+        background-size: contain;
+        display: block;
+        &.active {
+            @include bg('icon/i-fav-active.png');
+            background-size: contain;
+        }
+    } 
+    &-reflash {
+        @include size(16px);
+        @include bg('icon/i-reflash.png');
+        background-size: contain;
+        display: inline-block; 
+    } 
+    &-close {
+        @include size(36px);
+        @include bg('icon/i-close.png');
+        background-size: contain;
+        display: inline-block;  
+    }
+    &-star{
+        @include size(24px);
+        @include bg('icon/i-star.png');
+        background-size: contain;
+        display: inline-block;  
+        vertical-align: middle
+    }
+    &-write {
+        @include size(30px);
+        @include bg('icon/i-write.png');
+        background-size: contain;
+        display: inline-block;  
+    }
+    &-arrow {
+        @include size(30px);
+        @include bg('icon/i-arrow.png');
+        background-size: contain;
+        display: inline-block;  
+    }
+    &-share {
+        @include size(36px);
+        @include bg('icon/i-share.png');
+        background-size: contain;
+        @include display-align;
+    }
+    &-line {
+        @include size(36px);
+        @include bg('icon/i-line.png');
+        background-size: contain;
+        @include display-align;
+        margin: auto;
+    }
+    &-chat {
+        @include size(24px);
+        @include bg('icon/i-chat.png');
+        background-size: contain; 
+        @include display-align;
+    }
+    &-pic {
+        @include size(30px);
+        @include bg('icon/i-pic.png');
+        background-size: contain; 
+        @include display-align;
+    }
+    &-wechat {
+        @include size(36px);
+        @include bg('icon/i-wechat.png');
+        background-size: contain; 
+        @include display-align;
+    }
+    &-mail {
+        @include size(36px);
+        @include bg('icon/i-mail.png');
+        background-size: contain; 
+        @include display-align;
+    }
+
+    &-previous {
+        @include bg('icon/i-previous.png');
+        @include size(30px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-next {
+        @include bg('icon/i-next.png');
+        @include size(30px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-left {
+        @include bg('icon/i-left.png');
+        @include size(30px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-right {
+        @include bg('icon/i-right.png');
+        @include size(30px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-video1 {
+        @include bg('icon/i-video1.png');
+        @include size(36px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-video2 {
+        @include bg('icon/i-video2.png');
+        @include size(36px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-account {
+        @include bg('icon/i-account.png');
+        @include size(30px);
+        background-size: contain; 
+        @include display-align;
+    }
+    &-password {
+        @include bg('icon/i-password.png');
+        @include size(30px);
+        background-size: contain; 
+        @include display-align;
+    }
+}
+
+.i {
+    &[data-size="sm"] {
+        @include size(30px)
+    }
+    &[data-size="md"] {
+        @include size(40px)
+    }
+}
+
+$nav-icon : (
+    1:1, 
+    2:2,
+    3:3,
+    4:4,
+    5:5,
+    6:6,  
+);
+@each $name , $bg in $nav-icon {
+    .nav#{$name} {
+        @include size(24px);
+        @include bg('icon/nav#{$bg}.png');
+        background-size: contain;
+        display: inline-block;         
+    }  
+    .van-tabbar-item--active .nav#{$name} {
+        @include bg('icon/nav#{$bg}-active.png');
+        background-size: contain;
+    }
+}
+.i-set {
+    @include size(24px);
+    @include bg('icon/i-set.png');
+    background-size: contain;
+    display: inline-block; 
+}
+.nav3 {
+    @include size(60px);
+    margin-top: -36px;
+}
+
+$game-mark : (
+    hot:  i-hot ,  
+    new:  i-new ,  
+    recommend:  i-recommend ,  
+);
+@each $name , $bg in $game-mark {
+    .i-#{$name} { 
+        @include size(30px);
+        @include bg('#{$lang}/icon/#{$bg}.png');
+        background-size: contain;
+        display: inline-block; 
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+} 
+
+$level-icon : (
+    1:  vip1 ,  
+    2:  vip2 ,  
+    3:  vip3 ,  
+    4:  vip4 ,  
+    5:  vip5 ,  
+    6:  vip6 ,  
+);
+@each $name , $bg in $level-icon {
+    .i-level[data-level="#{$name}"]  {
+        @include size(70px);
+        @include bg('level/#{$bg}.png');
+        background-size: contain;
+        display: inline-block; 
+    }
+}
+
+$subnav-icon : (
+    1:1, 
+    2:2,
+    3:3,
+    4:4,
+    5:5,
+    6:6,
+    7:7,
+);
+@each $name , $bg in $subnav-icon {
+    .subnav#{$name} {
+        @include size(30px,40px);
+        @include bg('icon/subnav#{$bg}.png');
+        background-size: contain;
+        display: inline-block; 
+    }
+    .van-tab--active {
+        .subnav#{$name}  {
+            @include bg('icon/subnav#{$bg}-active.png');
+            background-size: contain;
+        }
+    }
+}
+$subnav-child-icon : (
+    fav2:fav2, 
+    RSG:RSG,
+    JDB:JDB,
+    PG:PG,
+    DS:DS,
+    Ameba:Ameba,
+    TP:TP,
+    JILI:JILI,
+    JOKER:JOKER,
+    GR:GR,
+    META:META,
+    NS:NS,
+    PP:PP,
+    FC:FC,
+);
+@each $name , $bg in $subnav-child-icon {
+    .i-#{$name} {
+        @include size(30px,40px);
+        @include bg('icon/#{$bg}.png');
+        background-size: contain;
+        display: inline-block; 
+    }
+    .van-tab--active {
+        .i-#{$name}  {
+            @include bg('icon/#{$bg}-active.png');
+            background-size: contain;
+        }
+    }
+}
+$announcement-icon : (
+    maintain: rgba(255,0,0,.91), 
+    game: rgba(168,0,255,.91),
+    system: rgba(0,84,255,.859), 
+);
+@each $name , $shadow in $announcement-icon {
+    .announcement_label-#{$name} {  
+        i {
+            @include size(18px);
+            @include bg('icon/i-#{$name}.png');
+            background-size: contain;
+            display: inline-block;  
+        }
+        span {
+            text-shadow: 0 0 7px $shadow; 
+            font-weight: 600;
+        }
+    } 
+}
+
+$sidebar-icon : (
+    member,
+    activity,
+    backup,
+    androidapk, 
+    info, 
+    lang 
+);
+@each $name in $sidebar-icon {
+    .i-#{$name}  { 
+            @include size(30px);
+            @include bg('icon/sidebar_#{$name}.png');
+            background-size: contain;
+            display: inline-block;   
+    }
+  
+}
+.i-lang {
+    @include flex-align(center)
+}

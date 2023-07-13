@@ -1,0 +1,216 @@
+.popup { 
+    background: none;
+    width: 100%; 
+}
+.modal {    
+    background: $modal-bg;
+    position: relative;
+    margin: 0 8px; 
+
+    //header
+    &_tabbar{
+        background: $modal_tabbar-bg; 
+        background-size: contain; 
+        @include size(96%,75px);
+        margin: auto;
+        header {
+            color: $modal_tabbar_header-color; 
+            text-align: center;
+            padding-top: 22px;
+        } 
+    }
+
+    //content
+    &_content{
+        height: calc(100vh - 120px);
+        padding: 0 20px;
+        overflow-y: auto;
+        padding-bottom: 70px;
+         
+        &::before {
+            border: $tabModalcont-bordercolor;
+            background: $tabModalcont-bg;
+            content: '';
+            position: absolute;
+            top:40px;right: 0;bottom: 0;left: 0;
+            border-radius: 24px;
+            z-index: -1;
+        } 
+    } 
+    &_msg {
+        color: $modal_msg-color; 
+        margin-bottom: 20px;
+        line-height: 1.2rem;
+        p{
+            margin: 10px 0;
+        }
+        ol {
+            color:  $modal_msg-ol-color;
+            text-align: left;
+        }
+    }
+    &_header {
+        color: $modal_header-color;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 10px 0;
+        span {
+            color: $modal_header-span-color;
+        }
+    }
+    &_title {
+        position: relative;     
+        text-align: center;    
+        margin: 12px 0;
+        span {         
+            border-radius: 16px;           
+            margin: auto;  
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content:center ;
+            padding: 8px;
+            &.title_s1 {
+                background: linear-gradient(to bottom, #f2c04d 50%, #f0dca9 100%);
+                color: $primary;
+                font-weight: 600;
+            }
+            &.title_s2 {
+                background-image: linear-gradient(to right,#ee8631 0% , #ea552d 100%);
+                color: #fff; 
+                box-shadow: inset 2px 2px 3px 1px #f3ad71 , inset -1px -1px 3px 1px #ec7c34; 
+            }
+        }
+        &::before {
+            @include size(100% , 2px);
+            position: absolute;
+            left: 0;right: 0;
+            top: 15px;
+            content: '';
+            background: #eae6dd;
+            z-index: -1;
+        }
+    }
+    
+    &_link {
+        text-align: right;
+        margin: 12px 0 4px;
+    }
+    &_info {
+        text-align: right;
+        line-height: 1.2rem;
+    }
+    &_h2 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    //footer
+    &_footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+    }
+    &_result {
+        background: $modal_result-bg;
+        box-shadow: $modal_result-shadow;
+        @include size(100%,75px); 
+        padding: 0 24px 0;
+        border-radius: 24px 24px 0 0;
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-bottom: -20px;
+        }      
+        &_user {
+            @include flex-align(start);
+            .rank_pic {
+                margin-right: 4px;
+            }
+        }  
+        &_money {
+            @include flex-align(start);
+            &_txt { 
+                .t-brown {
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 20px;
+                    margin: 2px 0; 
+                    font-weight: 600;
+                } 
+            } 
+    
+            .i-star { 
+                margin-right: 4px;
+            }
+        }    
+    &_bottom {
+        @include size(100%,70px); 
+        text-align: center;
+        padding-top: 10px;
+        &-bg {
+            background: $modal_bottom-bg; 
+            background-size: 100% 100%;
+        }
+        .btn {
+            height: 34px;
+            margin: auto;
+        }
+    }
+    &_btn {
+        text-align: center;
+        margin-top: 20px;
+    }   
+    
+   
+    //size
+    &-sm {
+        background: $modalSm-bg;
+        box-shadow:$modalSm-shadow;
+        border: $modalSm-borderColor;
+        .modal {
+            &_tabbar {
+                background: $modalSm_tabbar-bg;  
+                background-size: contain; 
+                @include size(96%,75px);
+                margin: auto;
+                header {
+                    color: $modalSm_tabbar_header-color;  
+                }
+            }
+     
+            &_content {            
+                padding-top: 20px;
+                padding-bottom: 20px;
+                height: auto;
+                &::before{
+                    background: $modalSm-cont-bg;  
+                }
+            }
+            &_msg { 
+                color: $modalSm_msg-color;
+                text-align: center;  
+            }
+        }
+        
+
+        
+    }
+    &.card {
+        .modal_content {
+            padding-top: 20px;
+        }
+    }
+
+}
+
+.van-popup__close-icon  {
+    color: $popup-colse-color;
+    border: $popup-colse-borderColor;
+    z-index: 10;
+    display: none;
+}

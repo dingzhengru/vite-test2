@@ -1,0 +1,117 @@
+.chat {
+    background: $chat-bg ;
+    height: 100vh; 
+
+    .topbar {
+        position: relative;
+        height: auto;
+        &_header{     
+            background: $chat_topbar_header-bg;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+    }
+    .content {
+         
+        padding: 0;   
+    }
+    &_list {
+        .user_pic {
+            @include size(40px)
+        }
+        li {
+            display: flex;
+            margin: 12px 0;
+        } 
+    }
+    &_msg {
+        height: calc(100vh - 110px);  
+        overflow-y: auto;  
+        padding: 8px;
+    }
+
+    &_user {
+        display: flex;
+    }
+    &_name {
+        color: $primary;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    &_txt {
+        margin-left: 8px;
+        position: relative;
+        max-width: 200px;
+        &_cont {
+            background: #ccc;
+            display: inline-block;
+            padding: 12px;
+            border-radius: 0 12px 12px;
+            line-height: 1.2rem;
+            p {
+                color: $primary;
+            }
+        }
+        .chat_expression {
+            width: 120px;
+        }
+    }
+    &_info {
+        position: absolute;
+        bottom: 0;
+        right: -40px;
+        font-size: 12px;
+        line-height: 1rem;
+    }
+   
+    &_btn {
+        position: fixed;
+        bottom: 0;left: 0;right: 0;
+        height: 50px;       
+        background: #f0f0f0; 
+        .van-icon {
+            color: $primary;
+        }
+        .input-text {
+            padding: 6px; 
+            .van-field__control {
+                text-align: left;
+            }
+        }
+        .btn {
+            @include size(100%,36px);
+        }
+        .btn_third {
+            background: #b78c1f;   
+            color: #222222;
+            box-shadow: none;
+            border-color: #b78c1f; 
+        }
+    }
+    &_own {
+        justify-content: end;
+        .chat_txt_cont {
+            border-radius: 22px 0 12px 12px;
+            background: #fafafa;
+        }
+    }
+    .form {
+        .input-text .van-field__label {
+            color: #000;
+        }
+        .input-text .van-field__control {
+            color: #000;
+        }
+        &.form_vertical .van-field__value {
+            background: #fff;
+        }
+        .input-textarea {
+            border: none;
+            background: transparent;
+            font-size: 14px;
+        }
+    } 
+    
+}

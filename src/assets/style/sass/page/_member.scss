@@ -1,0 +1,57 @@
+.member {
+    .top_back {
+        @include flex-align;
+        color: $top_back;   
+        padding: 10px 20px;
+        font-size: 14px;
+    } 
+    .tb { 
+        margin: 0px; 
+        thead th {
+            white-space: nowrap;
+        }
+        tbody {
+            td {
+                font-size: 12px;
+                vertical-align: middle;
+            }
+        }
+        .t-date {
+            margin-bottom: 2px;
+        }
+    } 
+}
+
+.betTotal {
+    display: flex;  
+    position: relative;      
+    font-size: 15px;
+    &::before {
+        @include size(1px,100%);
+        background:$betTotal_line;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    section {
+        text-align: center;
+        width: 50%;
+    }
+    .title {
+        color: $betTotal_title-color;
+        margin: 8px 0;
+    }
+    .num {
+        color: $betTotal_num-color;
+        margin-bottom: 10px;
+    }
+}
+.betReault {
+    text-align: center;
+    margin: 8px 0;
+    img {
+        width: 36px;
+        margin: 0 2px;
+    }
+}

@@ -1,0 +1,165 @@
+.btn {
+    @include flex-align(center);
+}
+.btn{
+    &-xs {
+        width: 90px;
+    }
+    &-sm {
+        width: 100px;
+        
+    }
+    &-md {
+        width: 110px; 
+    }
+
+    //base
+    &_primary {
+        background-image: $btn_primary-bg;
+        color:$btn_primary-color; 
+        box-shadow: $btn_primary-shadow;
+        border-radius: 24px;  
+    }
+    &_second {
+        background: $btn_second-bg;
+        color:$btn_second-color; 
+        box-shadow: $btn_second-shadow;
+        border: $btn_second-borderColor; 
+        border-radius: 24px;    
+        &.active {
+            background: $btn_second-active-bg;
+            color:$btn_second-active-color;  
+            border: $btn_second-active-borderColor;
+            box-shadow: $btn_second-active-shadow;
+        }      
+    }
+    &_third {
+        background: $btn_third-bg;
+        color:$btn_third-color; 
+        border: $btn_third-borderColor;
+        box-shadow: $btn_third-shadow;
+        border-radius: 7.5px;  
+    }
+    &_success { 
+        background: $btn_success-bg;
+        color:$btn_success-color; 
+        box-shadow: $btn_success-shadow;
+        border: $btn_success-borderColor;
+        border-radius: 24px; 
+    }
+    &_default { 
+        background: $btn_default-bg;
+        color:$btn_default-color; 
+        box-shadow: $btn_default-shadow;
+        border-radius: 24px;  
+    }    
+    
+    //
+    &_name {
+        @include bg('btn/btn_name.png'); 
+        background-size: contain;
+        padding-left: 30px; 
+        padding-right: 0;
+        border: none;
+    }
+    &_voice {
+        @include bg('btn/btn_voice.png'); 
+        background-size: contain;
+        padding-left: 30px; 
+        padding-right: 0;
+        border: none;
+    }
+
+    &_share{ 
+        @include bg('btn/btn_share.png');
+        @include size(108px,44px); 
+        background-size: contain;
+        color: $primary; 
+        font-size: 12px;
+        display: inline-flex;  
+        padding-left: 40px;
+        border: none;
+    }
+    &_back {
+        color: $primary;
+        box-shadow: inset -1px -1px 3px 1px #d7d0c8 , inset 2px 2px 3px 1px #fff;
+        border-radius: 0 20px 20px 0;
+        font-weight: 600;         
+    }
+    &_money {
+        background: $btn_money-bg ;
+        color: $btn_money-color; 
+        box-shadow: $btn_money-shadow;
+        border-radius: 24px; 
+        @include size(80px,30px);
+        @include flex-align(center);    
+        margin: auto;   
+    }
+    &_login {
+        background: $btn_login-bg; 
+        color: $btn_login-color;
+        box-shadow:$btn_login-shadow; 
+        height: 26px;
+        border-radius: 26px;
+        border: none;
+    } 
+    &_logout {
+        background: $btn_logout-bg;
+        color: $btn_logout-color;
+        border: none;
+        border-radius: 8px;
+    }
+
+    //
+    &_task {
+        color: $primary;
+        @include bg('btn/btn_task.png');
+        @include size(40px,50px);
+        background-size: contain; 
+        padding-top: 20px;
+        font-size: 12px;
+        font-weight: 600; 
+        filter:drop-shadow(1px 1px 3px #494949)
+    }
+    &_chat {
+        background: $btn-chat-bg;   
+        @include size(40px,50px);
+        background-size: contain; 
+        padding-top: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        filter:drop-shadow(1px 1px 3px #494949);
+        border: none;
+        padding: 20px 0 0;
+        z-index: 99;
+        i {
+            color: $btn-chat-color;
+            display: none;
+        }
+    }
+    &_line {
+        @include bg('btn/btn_line.png');
+        @include size(40px,50px);
+        background-size: contain; 
+        padding-top: 30px;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #06c655;
+        background-position: center top ;
+        border-radius: 20px;
+        color: #fff;
+        filter:drop-shadow(1px 1px 3px #494949)
+    }
+    &_contact {
+        background: $btn_contact-bg;
+        color:$btn_contact-color;      
+        border-radius: 35px; 
+        line-height: 20px;
+        padding: 12px 0;
+        border: none;
+        border-left: 1px solid #4a4d54;
+        border-right: 1px solid #4a4d54;
+        box-shadow: $btn_contact-shadow;
+        height:auto;
+    } 
+} 

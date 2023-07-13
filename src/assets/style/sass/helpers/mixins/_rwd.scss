@@ -1,0 +1,14 @@
+  
+//rwd
+@mixin custom-size($media-size , $media-min-size:none) {
+    @if $media-min-size==none {
+        @media (max-width : $media-size) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $media-min-size) and (max-width: $media-size) {
+            @content; 
+        }
+    }
+}

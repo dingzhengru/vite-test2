@@ -1,0 +1,27 @@
+.casino {
+    .van-tabs__content {
+        padding: 0 30px;
+    }
+    .modal_msg {
+        color: $modal_msg-color2;
+        line-height: 1.4rem;
+    }
+    .clubsLogo {
+        text-align: center;
+        margin: 25px 0;
+    }
+    &_bg {
+        background: $casino_bg;
+        height: 300px;
+        margin: 0 -30px;
+    }
+    .mclub_bg {
+         
+        background: $mclub_bg;
+        height: 300px;
+        margin: 0 -30px;
+    }
+    .video {
+        margin: 25px 0;
+    }
+}

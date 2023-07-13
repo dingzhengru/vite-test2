@@ -1,0 +1,48 @@
+.backup {
+    &_row {
+        color: $primary; 
+        display: flex; 
+        flex-direction: column;
+        gap:8px;
+        font-size: 12px;
+        padding: 15px 12px;
+        background: rgba(0,0,0,.3);
+        border-radius: 15px;
+        border: 1px solid hsla(0,0%,100%,.1);
+        box-shadow: inset 0 2px 0 #000;
+        color: #fff;
+        height: auto; 
+        width: 100%;
+        .title {
+            text-align: center;
+        }
+        .urlLoad {
+            position: relative;
+            width: 65%;
+            max-height: 120px;
+            height: 23vw;            
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+                background: $urlLoad-bg;
+                content: '';
+                position: absolute;
+                top: 0;right: 0;bottom: 0;left: 0;      
+                
+            }
+            span { 
+                color: #ffc531;
+            }
+            &.finish::before {
+                background: $urlLoadFinish-bg;;
+            }
+        }
+        .btn {
+            border-radius: 24px;
+        } 
+
+
+    }
+}
